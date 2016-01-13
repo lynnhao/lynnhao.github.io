@@ -9,7 +9,7 @@
     max-width: initial;
 }
 .wrapper {
-    margin-top: 1.5rem;
+    margin-top: 0rem;
 }
 /*footer show in each page
 #foote {
@@ -21,12 +21,11 @@
 
     height: 100px;
 }*/
-#header h1{
-}
 
 p {
 	margin-top: 15rem;
 }
+
 
 /* NAVIGATION - convert to rem */
 #navwrap {
@@ -69,9 +68,7 @@ p {
 
     opacity: 0.3;
     transition: all 1s ease;
-
 }
-
 .nav-arrow:hover {
     opacity: 1;
     transition: all 1s ease;
@@ -80,6 +77,18 @@ p {
     cursor: hand;
 }
 
+/* TEXT STYLES */
+h3 {
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    font-family: Avenir Next;
+    src: url(Avenir Next.ttc);
+}
+
+
+
+
+/* BACKGROUND COLORS */
 .gray{
     background-color: #4b4b4b;
 }
