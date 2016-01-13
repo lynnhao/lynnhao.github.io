@@ -69,11 +69,15 @@ p {
 
     opacity: 0.3;
     transition: all 1s ease;
+
 }
 
 .nav-arrow:hover {
     opacity: 1;
     transition: all 1s ease;
+
+    cursor: pointer;
+    cursor: hand;
 }
 
 .gray{
