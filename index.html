@@ -12,7 +12,7 @@
 
 <!--Main-->
 <div class="section gray fullWidth row">
-        <div id="main" class="small-12 medium-10 columns">
+    <div id="main" class="small-12 medium-10 columns">
             <div class="text-center">
                 <p id="main">
                     <img src="img/name.png" width="500px">
@@ -23,7 +23,7 @@
                     <img src="img/arrow_down_white.png" width="50px">
                 </div>
             </a>
-        </div> 
+    </div> 
     <!--<h4>Menu-Updated</h4>-->
     <div class="medium-2 medium-center columns hide-for-small-only">
         <div id="navwrap">
@@ -71,8 +71,8 @@
             <img class="about-me-img" src="img/about_img.png">
             <h3 class="about-heading">Hello, I'm Lynn, and <i>Design is my passion.</i></h3>
               <p>Armed with a camera, sketchbook, pen, curiosity, and open-mind, I approach problems through a design-thinking point of view. Design is everywhere, but good design takes thorough observation, analysis, and understanding of a particular task and user.</p>
-              <p>I've worked on a wide variety of design problems, from web tools to mobile applications, from wayfinding to classic product design. See <a href="#projects">my projects here</a>. I'm interested in how closely studying and interacting with situations and user groups inform effective and usable designs.</p> 
-              <p>But art and research go hand-in-hand. Sketching provides unique views and perspectives of interactions (see my work with <a href="#projects">KidPrint</a>) and allows clear thinking and creativity. Digital visualization is often the most effective way to communicate design ideas. See <a href="N/A">my art here</a>.</p>
+              <p>I've worked on a wide variety of design problems, from web tools to mobile applications, from wayfinding to classic product design. See <a href="#projects">my projects here</a>. I believe in closely studying and interacting with situations and user groups to inform effective and usable designs.</p> 
+              <p>But art and research go hand-in-hand. Sketching provides unique views and perspectives of interactions (see my work with <a href="#projects">KidPrint</a>) and allows clear thinking and creativity. Digital visualization is often the most effective way to communicate design ideas. See <a href="N/A">my art here</a>. With these tools, I'm eager to tackle any problem and produce novel, exciting design solutions.</p>
         <h5>i'd love to chat. contact info here</h5>
         </div>
         
@@ -82,12 +82,12 @@
 </div>
 
 <!--Projects-->
-<div id="projects" class="section lightest-gray fullWidth row">
+<div id="projects" class="section lightest-gray fullWidth">
     <div class="row">
     <div class="wrapper">
         <div class="lightest-gray medium-1 hide-for-small-only columns"></div>
         <div class="small-12 medium-9 medium-offset-1 fullHeight columns">
-            <h3 id="projects"><img class="title-icons" src="img/icon_projects@2x.png">PROJECTS</h3>
+            <h3><img class="title-icons" src="img/icon_projects@2x.png">PROJECTS</h3>
             <hr width="30%">
             <div class="wrap-project">
                 <div class="small-12 medium-4 columns fullHeight">
@@ -144,7 +144,7 @@
                 </div>
             </div>
         </div>
-        <div class="medium-2 columns hide-for-small-only"></div>
+        <div class="medium-1 columns hide-for-small-only"></div>
     </div>
     </div>
     <div class="row">
@@ -206,7 +206,7 @@
                 </div>
             </div>
         </div>
-        <div class="medium-2 columns  hide-for-small-only"></div>
+        <div class="medium-1 columns  hide-for-small-only"></div>
     </div>
     </div>
 
@@ -320,11 +320,11 @@
 
 <!--Experience-->
 <div id="experience" class="section lighter-gray fullWidth row">
-<div class="wrapper">
+    <div class="wrapper">
         <div class="lighter-gray medium-1 hide-for-small-only columns"></div>
         <div class="small-12 medium-9 medium-offset-1 columns">
             <!--div class="row tempstuff lighter-gray show-for-xlarge-only"></div-->
-            <h3 id="experience"><img class="title-icons" src="img/icon_exp@2x.png">EXPERIENCE</h3>
+            <h3 ><img class="title-icons" src="img/icon_exp@2x.png">EXPERIENCE</h3>
             <hr width="30%">
             <div class="wrap-inner">
                 <div class="row">
@@ -427,7 +427,7 @@
                 </div>
             </div>
         </div>
-        <div class="medium-2 columns hide-for-small-only" >
+        <div class="medium-1 columns hide-for-small-only" >
         </div>
     </div>
 </div>
@@ -437,7 +437,7 @@
     <div class="wrapper">
         <div class="lighter-gray medium-1 hide-for-small-only columns"></div>
         <div class="small-12 medium-9 medium-offset-1 columns">
-            <h3 id="education"><img class="title-icons" src="img/icon_edu@2x.png">EDUCATION</h3>
+            <h3><img class="title-icons" src="img/icon_edu@2x.png">EDUCATION</h3>
             <hr width="30%">
             <div class="wrap-inner">
                 <div class="row">
@@ -483,7 +483,7 @@
                 </div>
             </div>
         </div>
-        <div class="medium-2 hide-for-small-only columns" >
+        <div class="medium-1 hide-for-small-only columns" >
         </div>
     </div>
 </div>
@@ -493,7 +493,7 @@
     <div id="resume">
         <div class="medium-1 hide-for-small-only columns"></div>
         <div class="small-12 medium-9 columns">
-            <h3 id="resume"><img class="title-icons" src="img/icon_resume@2x.png">RESUMÉ</h3>
+            <h3 ><img class="title-icons" src="img/icon_resume@2x.png">RESUMÉ</h3>
             <hr width="30%">
             <div class="wrap-inner">
                 <div class="row">
@@ -538,6 +538,7 @@
         $("#footer").css({"padding-top":$(window).height()-100});
     });
 
+  // item on click function and active menu for current page
    $(function(){
     var sideMenu = $(".menu"),
     menuItems = sideMenu.find("a"),
@@ -546,9 +547,9 @@
       var item = $($(this).attr("href"));
       if (item.length) { return item; }
     });
-
-// Bind click handler to menu items
-// so we can get a fancy scroll animation
+    console.log(scrollItems);
+   // Bind click handler to menu items
+   // so when menu is clicked, it scrolls
     menuItems.click(function(e){
      var href = $(this).attr("href"),
       offsetTop = href === "#" ? 0 : $(href).offset().top;
@@ -557,40 +558,44 @@
      }, 500);
      e.preventDefault();
     });
-   })
 
-   // Bind to scroll not used
+    //the rest is for highlighting the active menu on windows scroll
+    var lastId;
+    var topMenuHeight=$(window).height();
+
+   // Bind to scroll
    $(window).scroll(function(){
-   // Get container scroll position
-   var fromTop = $(this).scrollTop()+topMenuHeight;
+       // Get container scroll position
 
-   var offsetTop
-   // Get id of current scroll item
-   var cur = scrollItems.map(function(){
-     if ($(this).offset().top < fromTop)
-       return this;
-   });
+       var fromTop = $(this).scrollTop()+topMenuHeight;
+       console.log(fromTop);
+       var offsetTop
+       // Get id of current scroll item
+       var cur = scrollItems.map(function(){
+           if ($(this).offset().top < fromTop)
+               return this;
+       });
 
-   // Get the id of the current element
-   cur = cur[cur.length-1];
-   var id = cur && cur.length ? cur[0].id : "";
-   console.log(id);
+       // Get the id of the current element
+       cur = cur[cur.length-1];
+       var id = cur && cur.length ? cur[0].id : "";
+       console.log("id:"+id );
 
-   if (lastId !== id) {
-       lastId = id;
+       if (lastId !== id) {
+           lastId = id;
 
-     //  var top1 = $('#'+id).offset().top;
+           //  var top1 = $('#'+id).offset().top;
 
-       /*$("body").stop().animate({
-           scrollTop: top1
-       }, 500);*/
+           /*$("body").stop().animate({
+            scrollTop: top1
+            }, 500);*/
 
-       // Set/remove active class
-       menuItems
-               .parent().removeClass("active")
-               .end().filter("[href=#"+id+"]").parent().addClass("active");
-   }   
-
+           // Set/remove active class
+           menuItems
+                   .parent().removeClass("active")
+                   .end().filter("[href=#"+id+"]").parent().addClass("active");
+       }
+    })
 });
 
 </script>

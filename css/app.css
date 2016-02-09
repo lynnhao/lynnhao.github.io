@@ -75,6 +75,8 @@
 .active {
    /* background: #2199e8;*/
     color: white;
+    opacity:1 !important;
+  transition: all 1s ease;
 }
 .fullWidth {
     width: 100%;
@@ -83,12 +85,13 @@
     max-width: initial;
 }
 .fullHeight {
-    height: 100%;
-    max-height: initial;
+    /*height: 100%;
+    max-height: initial;*/
 }
 .wrapper {
     margin-top: 0rem;
     height: 100%;
+    margin-bottom: 2rem;
 }
 
 .wrap-inner {
@@ -401,6 +404,7 @@ li{
      float: left;
      width: 100%;
      height: 100%;
+     min-height: 260px;
 }
 .project-info {
     height: 100%
