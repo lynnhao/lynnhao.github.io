@@ -1,17 +1,17 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-
 @media (max-width: 768px)  {
     #navwrap { display:none; }
     .row.tempstuff {display:none;}
     .footer {display:none;}
     .icon-wrapper {display:none;}
     /*.skillset {display:none;}*/
+    html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 }
 @media (max-width: 980px)  {
@@ -83,7 +83,10 @@ html, body {
 .active {
    /* background: #2199e8;*/
     color: white;
+    opacity:1 !important;
+    transition: all 1s ease;
 }
+
 .fullWidth {
     width: 100%;
     margin-left: auto;
