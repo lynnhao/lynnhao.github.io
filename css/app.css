@@ -4,6 +4,14 @@
     .footer {display:none;}
     .icon-wrapper {display:none;}
     /*.skillset {display:none;}*/
+    html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 }
 @media (max-width: 980px)  {
@@ -76,8 +84,13 @@
    /* background: #2199e8;*/
     color: white;
     opacity:1 !important;
+<<<<<<< HEAD
   transition: all 1s ease;
+=======
+    transition: all 1s ease;
+>>>>>>> a8bc8af2b408acee2560173b00e46977225a630c
 }
+
 .fullWidth {
     width: 100%;
     margin-left: auto;
@@ -279,9 +292,10 @@ h5 {
 }
 
 ul{
- padding-left: 3rem;
- font-size: 0.8rem;
- padding-right: 12.5rem;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    font-size: 0.8rem;
+    padding-right: 12.5rem;
 }
 
 #experience ul, #projects ul, #education ul {
@@ -401,7 +415,7 @@ li{
 .project-wrap {
      overflow: hidden;
      position: relative;
-     float: left;
+    /* float: left;*/
      width: 100%;
      height: 100%;
      min-height: 260px;
