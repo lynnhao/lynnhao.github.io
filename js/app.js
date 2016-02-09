@@ -6,5 +6,5 @@ $(document).ready(function(){
         section : ".section"
     });
     $("#footer").css({"padding-top":$(window).height()-100});
-});
 
+});
