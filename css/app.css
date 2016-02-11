@@ -291,12 +291,12 @@ a.nav-active {
 }   
 
 /* TEXT STYLES */
-h3#projects, h3#experience, h3#education, h3#resume{
-    margin-left: -2rem;
-    margin-bottom: -1rem;
+#projects h3, #experience h3, #education h3, #resume h3{
+    margin-left: -1rem;
+    margin-bottom: -0.2rem;
     margin-top: 0.6rem;
     opacity: 0.8;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .title-icons {
     width: 30px;
@@ -343,6 +343,11 @@ h3#projects, h3#experience, h3#education, h3#resume{
     letter-spacing: 1.2px;
     font-family: Avenir Next;
 }
+
+#about h5 {
+    padding-right: 3rem;
+}
+
 h3 {
     padding-top: 1.5rem;
     color: white;
