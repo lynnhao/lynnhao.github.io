@@ -56,6 +56,9 @@
 .magenta {
     background-color: #DA3C78;
 }
+.dark-navy {
+  background-color: #4C5A69;
+}
 
 /** START **/
 .active {
@@ -203,12 +206,13 @@ p#main {
   src: url(Avenir Next.ttc);
   font-size:0.75rem;
 }
-.nav-arrow {
+/*.nav-arrow {
     padding-top: 8rem;
 
     opacity: 0.3;
     transition: all 1s ease;
 }
+
 .nav-arrow:hover {
     opacity: 1;
     transition: all 1s ease;
@@ -216,6 +220,71 @@ p#main {
     cursor: pointer;
     cursor: hand;
 }
+}*/
+
+.nav-arrow {
+  position:relative;
+  font-size:1.3em;
+  display:inline-block;
+  height: 80px;
+  margin-top: -1rem;
+  opacity: 0.4;
+  transition: 1s ease all;
+
+}
+.nav-arrow:hover {
+  opacity: 1.0;
+  transition: 1s ease all;
+  cursor: pointer;
+}
+
+.nav-arrow:after {
+  content:'';
+  width:30px;
+  height:30px;
+  position:absolute;
+  left: 0px;
+  margin:auto;
+  top:10px;
+
+
+  -webkit-animation:3s arrow infinite ease;
+  animation:3s arrow infinite ease;
+}
+
+.nav-arrow:after {
+  border-right:2px solid #FFF;
+  border-bottom:2px solid #FFF;
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+  
+}
+
+#main .nav-arrow-container div, #about .nav-arrow-container div {
+  font-family: "Avenir Next";
+  color: white;
+  font-size: 0.85rem;
+}
+
+#main .nav-arrow-container div p {
+  margin-left: -2rem;
+}
+
+#main .nav-arrow-container {
+  margin-left: 50%;
+  white-space: nowrap;
+  margin-top: 6rem;
+}
+
+#about .nav-arrow-container {
+  margin-left: 50%;
+  white-space: nowrap;
+  margin-top: 2.5rem;
+}
+
+
+
 
 a.nav-active {
     color: #ccc;
@@ -227,14 +296,15 @@ h3#projects, h3#experience, h3#education, h3#resume{
     margin-bottom: -1rem;
     margin-top: 0.6rem;
     opacity: 0.8;
+    font-size: 1rem;
 }
 .title-icons {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     clear: both;
     position: relative;
     margin-right: 1rem;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
     opacity: 0.8;
 }
 .about-me-img {
@@ -277,10 +347,11 @@ h3 {
     padding-top: 1.5rem;
     color: white;
     font-family: Avenir Next Condensed;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     text-align: center;
     src: url(Avenir Next.ttc);
+    opacity: 0.8;
 }
 
 h5 {
@@ -303,17 +374,37 @@ h5 {
 
 }
 .list-header {
-    margin-top: 1rem;
+    padding-top: 1rem;
     font-family: Avenir Next Condensed;
     font-size: 1rem;
     text-transform: uppercase;
 }
-
+#education .content ul {
+  padding-top: 0rem;
+}
 .content ul, #navwrap ul{
     padding-top: 1.5rem;
     padding-left: 3rem;
     font-size: 0.8rem;
     padding-right: 12.5rem;
+}
+
+.sel-edu-proj {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1rem;
+  font-family: "Avenir Next";
+  color: #4b4b4b;
+  transition: 1s ease all;
+
+}
+
+.sel-edu-proj:hover {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1rem;
+  font-family: "Avenir Next";
+  transition: 1s ease all;
 }
 
 #experience ul, #projects ul, #education ul {
@@ -330,6 +421,9 @@ li{
     margin-top: -1rem;
 }
 
+#experience .wrap-inner:last-child, #education .wrap-inner:last-child{
+  margin-bottom: 10rem;
+}
 .right {
     float: right;
 }
@@ -407,7 +501,7 @@ li{
     margin-left: 2rem;
 }
 
-.skill {
+.skill-dsgn {
     border: 1px solid #1BBC9B;
     padding: 6px 15px;
     border-radius:8px;
@@ -420,6 +514,49 @@ li{
     margin-top: 1rem;
     display:inline-block;
 }
+
+.skill-dev {
+    border: 1px solid #D24D57;
+    padding: 6px 15px;
+    border-radius:8px;
+    font-family: Avenir Next Condensed;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /*float: left;*/
+    margin-right: 0.3rem;
+    margin-top: 1rem;
+    display:inline-block;
+}
+
+.skill-rsrch {
+    border: 1px solid #AB69C6;
+    padding: 6px 15px;
+    border-radius:8px;
+    font-family: Avenir Next Condensed;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /*float: left;*/
+    margin-right: 0.3rem;
+    margin-top: 1rem;
+    display:inline-block;
+}
+
+.skill-oth {
+    border: 1px solid #4b4b4b;
+    padding: 6px 15px;
+    border-radius:8px;
+    font-family: Avenir Next Condensed;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /*float: left;*/
+    margin-right: 0.3rem;
+    margin-top: 1rem;
+    display:inline-block;
+}
+
 /*PROJECT PANELS*/
 .project-img {
     width:100%;
@@ -602,24 +739,17 @@ li{
     *****/
 
 /*FOOTER*/
-.footer {
-    display:inline-block; 
-    padding-top: 1rem;
-    padding-bottom: 2.5rem;
-    padding-right: 6.3rem;
+/*#footer {
+    padding-top: 50rem;
     height: 40px;
     width: 100%; 
-    background-color:#22313F; 
-    z-index:1000; 
     text-align: center;
     color: white;
     font-family: Avenir Next Condensed;
     opacity: 0.82;
-    float: center;
-    position: fixed;
     bottom: 0;
 
-}
+}*/
 
 
 .tempstuff {
@@ -693,4 +823,22 @@ li{
 }
 @media (max-width: 1150px)  {
 
+}
+
+
+@-webkit-keyframes arrow {
+  0%,100% {
+    top:15px;
+  }
+  50% {
+    top:30px;
+  }
+}
+@keyframes arrow {
+  0%,100% {
+    top:15px;
+  }
+  50% {
+    top:30px;
+  }
 }

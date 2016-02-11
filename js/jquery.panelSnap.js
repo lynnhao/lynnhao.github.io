@@ -567,6 +567,8 @@ if ( typeof Object.create !== 'function' ) {
   };
 
   $.fn[pluginName].options = {
+        jQuery(function($) {
+
     $menu: false,
     menuSelector: 'a',
     panelSelector: '> section',
@@ -578,7 +580,7 @@ if ( typeof Object.create !== 'function' ) {
     slideSpeed: 200,
     delay: 0,
     easing: 'linear',
-    offset: 0,
+    offset: 100,
     navigation: {
       keys: {
         nextKey: false,

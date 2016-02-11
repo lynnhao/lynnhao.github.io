@@ -5,6 +5,13 @@ $(document).ready(function(){
     $.scrollify({
         section : ".section"
     });
-    $("#footer").css({"padding-top":$(window).height()-100});
+
+    $(".nav-arrow").click(function(e) {
+		e.preventDefault();
+
+		$.scrollify.next();
+	});
+
+    /*$("#footer").css({"padding-top":$(window).height()-100});*/
 
 });
