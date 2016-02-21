@@ -323,6 +323,7 @@ a.nav-active {
     color: white;
     opacity: 0.6;
     font-family: "Avenir Next";
+    font-size: 0.95rem;
 }
 
 #about p a {
@@ -364,6 +365,31 @@ h5 {
     font-size: 1rem;
     color: white;
     padding-left: 3rem;
+}
+
+#about p.uc-text {
+  font-family: Alice;
+  font-size: 0.5;
+  padding-left: 3rem;
+  font-style: italic;
+}
+
+.about-contact-info {
+  font-family: Avenir Next;
+  font-size: 0.8rem;
+  color: white;
+  font-style: none;
+}
+
+.about-contact-info a{
+  font-family: Avenir Next;
+  font-size: 0.8rem;
+  color: white;
+  font-style: none;
+}
+
+.about-contact-info a:hover {
+  opacity: 0.5;
 }
 
 .title{
