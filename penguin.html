@@ -104,8 +104,6 @@
             </div>
         </div>
     </div>
-        <div class="row" style="padding-bottom: 10rem;" ></div>
-
 </div>
 
 </body>
@@ -118,78 +116,12 @@
 <script>
    $(document).foundation();
 
+   // Back arrow div links to a href within div
    $(".back-arrow").click(function() {
         window.location = $(this).find("a").attr("href");
         return false;
    });
 
-   $(function() {
-        $(".section").css({"height":$(window).height()});
-        $.scrollify({
-            section : ".section"
-        });
-        $("#footer").css({"padding-top":$(window).height()-100});
-    });
-
-  // item on click function and active menu for current page
-   $(function(){
-    var sideMenu = $(".menu"),
-    menuItems = sideMenu.find("a"),
-    // Anchors corresponding to menu items
-    scrollItems = menuItems.map(function(){
-      var item = $($(this).attr("href"));
-      if (item.length) { return item; }
-    });
-    console.log(scrollItems);
-   // Bind click handler to menu items
-   // so when menu is clicked, it scrolls
-    menuItems.click(function(e){
-     var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top;
-     $('html, body').stop().animate({
-      scrollTop: offsetTop
-     }, 500);
-     e.preventDefault();
-    });
-
-    //the rest is for highlighting the active menu on windows scroll
-    var lastId;
-    var topMenuHeight=$(window).height();
-
-   // Bind to scroll
-   $(window).scroll(function(){
-       // Get container scroll position
-
-       var fromTop = $(this).scrollTop()+topMenuHeight;
-       console.log(fromTop);
-       var offsetTop
-       // Get id of current scroll item
-       var cur = scrollItems.map(function(){
-           if ($(this).offset().top < fromTop)
-               return this;
-       });
-
-       // Get the id of the current element
-       cur = cur[cur.length-1];
-       var id = cur && cur.length ? cur[0].id : "";
-       console.log("id:"+id );
-
-       if (lastId !== id) {
-           lastId = id;
-
-           //  var top1 = $('#'+id).offset().top;
-
-           /*$("body").stop().animate({
-            scrollTop: top1
-            }, 500);*/
-
-           // Set/remove active class
-           menuItems
-                   .parent().removeClass("active")
-                   .end().filter("[href=#"+id+"]").parent().addClass("active");
-       }
-    })
-});
 
 </script>
 </body>
