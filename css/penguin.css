@@ -311,7 +311,7 @@ h3 {
      opacity:0;
      position: absolute;
      width: 100%;
-     height: 100.5%;
+     height: 100%;
      z-index: 800;
      transition: opacity 0.4s;
      -moz-transition:opacity 0.4s;
