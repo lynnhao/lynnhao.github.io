@@ -16,9 +16,8 @@
     <!-- favicon -->
     <link rel="icon" type="image/png" href="img/favicon.png"/>
 
-    <!-- fancybox CSS -->
-    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen"/>
+    <!--Lightbox -->
+    <link href="lightbox2/src/css/lightbox.css" rel="stylesheet">
 </head>
 
 <body>
@@ -60,7 +59,7 @@
     <div class="small-6 medium-6 columns">
         <div class="fullHeight">
             <div class="image-wrap">
-            <a class="fancybox" rel="penguin" href="img/projects/penguin-screens.png" title="Penguin - Selected Screens">
+            <a href="img/projects/penguin-screens.png" data-lightbox="penguin" data-title="Selected screens from Penguin">
                 <img class="image" src="img/projects/penguin-screens.png">
                 <div class="image-overlay turquoise">
                     <p class="image-overlay-title">Selected Screens</p>
@@ -71,7 +70,7 @@
         </div><br/>
         <div class="fullHeight">
             <div class="image-wrap">
-            <a class="fancybox" rel="penguin" href="img/projects/penguin-icebreak.png" title="Penguin - Icebreaking Iteration">
+            <a href="img/projects/penguin-icebreak.png" data-lightbox="penguin" data-title="Three selected iterations of main icebreaking page.">
                 <img class="image" src="img/projects/penguin-icebreak.png">
                 <div class="image-overlay turquoise">
                     <p class="image-overlay-title">Icebreak Page</p>
@@ -82,7 +81,7 @@
         </div><br/>
         <div class="fullHeight">
             <div class="image-wrap">
-            <a class="fancybox" rel="penguin" href="img/projects/penguin-sketch.JPG" title="Penguin - Ideation Sketch">
+            <a href="img/projects/penguin-sketch.JPG" data-lightbox="penguin" data-title="Early sketch of UX concepts.">
                 <img class="image" src="img/projects/penguin-sketch.JPG">
                 <div class="image-overlay turquoise">
                     <p class="image-overlay-title">Notebook Sketch</p>
@@ -95,7 +94,7 @@
     <div class="small-6 medium-6 columns">
         <div class="fullHeight">
             <div class="image-wrap">
-            <a class="fancybox" rel="penguin" href="img/projects/penguin-card.png" title="Penguin - Business Cards">
+            <a href="img/projects/penguin-card.png" data-lightbox="penguin" data-title="Business card design mock-up.">
                 <img class="image" src="img/projects/penguin-card.png">
                 <div class="image-overlay turquoise">
                     <p class="image-overlay-title">Business Cards</p>
@@ -106,7 +105,7 @@
         </div><br/>
         <div class="fullHeight">
             <div class="image-wrap">
-            <a class="fancybox" rel="penguin" href="img/projects/penguin_wireframe.png" title="Penguin - Wireframe">
+            <a href="img/projects/penguin-wireframe.png" data-lightbox="penguin" data-title="Early wireframe of interactions between Penguin screens.">
                 <img class="image" src="img/projects/penguin_wireframe.png">
                 <div class="image-overlay turquoise">
                     <p class="image-overlay-title">Wireframe</p>
@@ -117,7 +116,7 @@
         </div><br/>
         <div class="fullHeight">
             <div class="image-wrap">
-            <a class="fancybox" rel="penguin" href="img/projects/penguin-logos.png" title="Penguin - Logo Board">
+            <a href="img/projects/penguin-logos.png" data-lightbox="penguin" data-title="Logo branding board for marketing team.">
                 <img class="image" src="img/projects/penguin-logos.png">
                 <div class="image-overlay turquoise">
                     <p class="image-overlay-title">Logo</p>
@@ -129,25 +128,21 @@
     </div>
 </div>
 
+<div id="footer" class="row turquoise fullWidth text-center">
+    <span>Contact me:</span> <a href="mailto:lihao@ucsd.edu">email</a> | 510.542.4393
+</div>
+
 <!-- Link JQuery -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- Foundation -->
 <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.js"></script>
 <!-- Scrollify -->
 <script src="js/jquery.scrollify.min.js"></script>
-<!-- Custom JS--
-<script src="js/app.js"></script-->
-<!-- Add fancyBox -->
-<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
-<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<!-- Lightbox -->
+<script src="lightbox2/src/js/lightbox.js"></script>
 
 <script type="text/javascript">
     $(document).foundation();
-
-    $(document).ready(function() {
-        $(".fancybox").fancybox();
-    });
 </script>
 
 <script>

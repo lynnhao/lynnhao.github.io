@@ -835,6 +835,23 @@ li{
 
 }
 
+/** FOOTER **/
+#footer-cust span {
+  font-family: Avenir Next Condensed;
+  font-weight: bold;
+}
+
+#footer-cust, #footer-cust a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-family: Avenir Next;
+}
+
+#footer-cust a:hover {
+  opacity: 0.5;
+}
+
 /** MOBILE **/
 @media (max-width: 768px)  {
     #navwrap { display:none; }

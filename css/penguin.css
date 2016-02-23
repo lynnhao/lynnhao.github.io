@@ -371,9 +371,26 @@ h3 {
       float:left;
       color: #4b4b4b;
     }
-  
 }
 
+/** FOOTER **/
+#footer span {
+  font-family: Avenir Next Condensed;
+  font-weight: bold;
+}
+
+#footer, #footer a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-family: Avenir Next;
+}
+
+#footer a:hover {
+  opacity: 0.5;
+}
+
+/** MEDIA VIEWPORT **/
 @media (max-width: 960px)  {
   .show-for-medium-up { display: none; }
   .image-overlay { display: none; }
