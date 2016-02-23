@@ -8,15 +8,27 @@
 
     <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="css/foundation.css">
+    
     <link rel="stylesheet" href="css/app.css">
 
     <link rel="icon" type="image/png" href="img/favicon.png"/>
 </head>
 
 <body>
-
 <!--Main-->
 <div class="section gray fullWidth row">
+    <div class="contain-to-grid sticky show-for-small-only">
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+        </ul>
+        <section class="top-bar-section">
+            <ul class="left">
+                <li><a href="#">Left Button</a></li>
+            </ul>
+        </section>
+    </nav>
+    </div>
     <div id="main" class="small-12 medium-10 columns">
             <div class="text-center">
                 <p id="main">
@@ -29,7 +41,7 @@
             </div>
     </div> 
     <!--<h4>Menu-Updated</h4>-->
-    <div id="mobile-nav">
+    <!--div id="mobile-nav">
         <ul class="mobile-ul menu">
             <li><a href="#">
                 <div class="mobile-name">Lynn Hao</div>
@@ -50,7 +62,7 @@
                 <div class="mobile-list">Résumé</div>
             </a></li>
         </ul>
-    </div>
+    </div-->
     <div class="medium-2 medium-center columns hide-for-small-only">
         <div id="navwrap">
             <ul class="vertical menu">
@@ -151,7 +163,7 @@
                 <div class="small-12 medium-4 columns fullHeight">
                     <div class="header panel">
                         <div class="project-wrap">
-                            <img class="project-img" src="http://lorempixel.com/400/400/">
+                            <img class="project-img orange-red" src="img/thumbnails/carity-thumb.png">
                             <div class="project-overlay orange-red">
                                 <p class="project-overlay-text">More Info Coming Soon</p>
                             </div>
@@ -179,7 +191,7 @@
                 <div class="small-12 medium-4 columns fullHeight">
                     <div class="header panel">
                         <div class="project-wrap">
-                            <img class="project-img" src="http://lorempixel.com/400/400/">
+                            <img class="project-img blue" src="img/thumbnails/wayfinding-thumb.png">
                             <div class="project-overlay blue">
                                 <p class="project-overlay-text">More Info Coming Soon</p>
                             </div>
@@ -565,19 +577,11 @@
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.js"></script>
-<script src="js/jquery.panelSnap.js"></script>
+<script src="js/foundation/foundation.topbar.js"></script>
 <script src="js/jquery.scrollify.min.js"></script>
 <script src="js/app.js"></script>
 <script>
    $(document).foundation();
-
-   $(function() {
-        $(".section").css({"height":$(window).height()});
-        $.scrollify({
-            section : ".section"
-        });
-        $("#footer").css({"padding-top":$(window).height()-100});
-    });
 
   // item on click function and active menu for current page
    $(function(){
@@ -609,7 +613,7 @@
        // Get container scroll position
 
        var fromTop = $(this).scrollTop()+topMenuHeight;
-       console.log(fromTop);
+      // console.log(fromTop);
        var offsetTop
        // Get id of current scroll item
        var cur = scrollItems.map(function(){
@@ -620,7 +624,7 @@
        // Get the id of the current element
        cur = cur[cur.length-1];
        var id = cur && cur.length ? cur[0].id : "";
-       console.log("id:"+id );
+       //console.log("id:"+id );
 
        if (lastId !== id) {
            lastId = id;
