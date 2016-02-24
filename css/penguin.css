@@ -88,6 +88,11 @@
     padding-top: 2rem;
 }
 
+.columns {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
 /*DOWN-BUTTON*/
 .nav-arrow {
   position:relative;
@@ -198,6 +203,13 @@ h3 {
 }
 
 /*SECTION HEADER*/
+.header-section .header-title p a {
+  color: rgba(26, 188, 156, 1.0);
+}
+
+.header-section .header-title p a:hover {
+  opacity: 0.5;
+}
 
 .header-section {
   padding-right: 1rem;
