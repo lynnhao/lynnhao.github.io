@@ -1,0 +1,360 @@
+/* BACKGROUND COLORS */
+.gray{
+    background-color: #4b4b4b;
+}
+.turquoise {
+    background-color: rgba(26, 188, 156, 1.0);
+}
+.plum {
+    background-color: #913D88;
+}
+
+/** START **/
+.fullWidth {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+}
+
+.fullHeight {
+  height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: initial;
+    min-height: 100%;
+}
+
+.wrapper {
+    margin-top: 0rem;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.wrap-inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
+.columns {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+.bg-color {
+  background-color: #913D88;
+}
+
+/* SECTIONS */
+#details-wrapper{
+  border-radius: 6rem 6rem 0rem 0rem;
+  background-color: white;
+  opacity: 1;
+  margin-top: 10%;
+}
+
+#header {
+  height: 100%;
+}
+
+#details {
+  height: 100%;
+  padding-bottom: 15%;
+  padding-top: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+
+/*BACK-BUTTON*/
+.back-arrow {
+  position:fixed;
+  font-size:1.3em;
+  display:inline-block;
+  height: 80px;
+  opacity: 0.4;
+  transition: 1s ease all;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  float: left;
+  z-index: 1000;
+}
+
+.back-arrow:hover {
+  opacity: 1.0;
+  transition: 1s ease all;
+  cursor: pointer;
+}
+
+.back-arrow:after {
+  content:'';
+  width:30px;
+  height:30px;
+  position:absolute;
+  left: 0px;
+  margin:auto;
+  top:10px;
+
+  border-left:2px solid #FFF;
+  border-bottom:2px solid #FFF;
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+/*TEXT STYLES*/
+h1 {
+  margin-top
+}
+
+h3 {
+  font-family: Avenir Next Condensed;
+  font-style: italic;
+  font-size: 1.7rem;
+  color: #4b4b4b;
+}
+
+.header-title p {
+  margin-bottom: 0.25rem;
+}
+
+.dsgn-process {
+  font-size: 2rem;
+  font-family: Avenir Next Condensed;
+  text-transform: uppercase;
+  color: #A13282;
+}
+
+/*SECTION HEADER*/
+.header-intro {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.header-title p a {
+  color: #A13282;
+}
+
+.header-title p a:hover {
+  opacity: 0.5;
+}
+
+.header-title {
+  padding-right: 1rem;
+  border-left: 2px solid #A13282;
+  padding-left: 1.0rem;
+  color: #4b4b4b;
+  font-family: Avenir Next;
+  font-size: 0.9rem;
+}
+
+.title {
+  font-family: "AvenirNextCondensed-Medium";
+  text-transform: uppercase;
+  color: #a7a7a7;
+}
+
+/*IMAGES*/
+.img-header {
+  width: 18rem;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.logo {
+  width: 12rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/*SKILLS*/
+.skillset {
+    margin-left: 12%;
+    margin-right: 12%;
+    text-align: center;
+}
+
+.skill-dsgn {
+    border: 1px solid #1BBC9B;
+    padding: 6px 15px;
+    border-radius:8px;
+    font-family: Avenir Next Condensed;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 0.3rem;
+    margin-top: 1rem;
+    display:inline-block;
+    color: #4b4b4b;
+}
+
+.skill-dev {
+    border: 1px solid #D24D57;
+    padding: 6px 15px;
+    border-radius:8px;
+    font-family: Avenir Next Condensed;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 0.3rem;
+    margin-top: 1rem;
+    display:inline-block;
+}
+
+.skill-rsrch {
+    border: 1px solid #AB69C6;
+    padding: 6px 15px;
+    border-radius:8px;
+    font-family: Avenir Next Condensed;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 0.3rem;
+    margin-top: 1rem;
+    display:inline-block;
+}
+
+.skill-oth {
+    border: 1px solid #4b4b4b;
+    padding: 6px 15px;
+    border-radius:8px;
+    font-family: Avenir Next Condensed;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /*float: left;*/
+    margin-right: 0.3rem;
+    margin-top: 1rem;
+    display:inline-block;
+}
+
+/** PROJECT TEXT **/
+.subheader {
+  text-align: center;
+  font-family: Avenir Next Condensed;
+  color: #a7a7a7;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.body {
+  font-family: Avenir Next;
+  font-size: 0.9rem;
+}
+
+.caption {
+  font-family: Avenir Next;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #4b4b4b;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.caption-title {
+  color: #A13282;
+  font-style: italic;
+  font-style: bold;
+}
+
+.quote {
+  margin-left: 4%;
+  padding-left: 0.7rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: Avenir Next Condensed;
+  color: #A13282;
+  font-style: italic;
+  border-left: 2px solid #FFD472;
+}
+
+/** PROJECT IMAGES **/
+.image-wrap {
+  width: 100%;
+  /*height: 10rem;*/
+  height: 100%;
+  /*float: left;*/
+  position: relative;
+}
+
+.image-group {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.image {
+  width: 40rem;
+  /*height: 100%;*/
+  position: relative;
+}
+
+/** MOBILE **/
+@media (max-width: 768px)  {
+    #navwrap { display:none; }
+    .row.tempstuff {display:none;}
+    .footer {display:none;}
+    .icon-wrapper {display:none;}
+    /*.skillset {display:none;}*/
+    #mobile-nav {
+      display: inline-block;
+      position: fixed;
+      background-color: #f1f1f1;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1500;
+      /*padding: 0.5rem 1rem 0.5rem 1rem;*/
+      padding: 0px;
+      float:left;
+      color: #4b4b4b;
+    }
+}
+
+/** MEDIA VIEWPORT **/
+@media (max-width: 960px)  {
+  .show-for-medium-up { display: none; }
+  .image-overlay { display: none; }
+
+  .bg-color { background-color: white; }
+  .back-arrow:after {
+    border-left:2px solid #A13282;
+    border-bottom:2px solid #A13282;
+  }
+  .back-arrow {
+    opacity: 1;
+  }
+
+}
+
+@media (min-width: 960px) {
+  .show-for-small-up {display: none;}
+
+
+}
+
+@media (max-width: 1150px)  {
+
+}
+
+
+/** ARROW WEBKIT **/
+@-webkit-keyframes arrow {
+  0%,100% {
+    top:15px;
+  }
+  50% {
+    top:30px;
+  }
+}
+@keyframes arrow {
+  0%,100% {
+    top:15px;
+  }
+  50% {
+    top:30px;
+  }
+}
