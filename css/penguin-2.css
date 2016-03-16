@@ -48,10 +48,10 @@
 
 /* SECTIONS */
 #details-wrapper{
-  border-radius: 6rem;
+  border-radius: 6rem 6rem 0rem 0rem;
   background-color: white;
+  opacity: 1;
   margin-top: 10%;
-  margin-bottom: 10%;
 }
 
 #header {
@@ -253,6 +253,25 @@ h3 {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
+
+.caption-title {
+  color: #00a9e0;
+  font-style: italic;
+  font-style: bold;
+}
+
+.quote {
+  margin-left: 4%;
+  padding-left: 0.7rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: Avenir Next Condensed;
+  color: rgba(26, 188, 156, 1.0);
+  font-style: italic;
+  border-left: 2px solid #00a9e0;
+
+}
 /** PROJECT IMAGES **/
 .image-wrap {
   width: 100%;
@@ -305,6 +324,10 @@ h3 {
   .back-arrow:after {
     border-left:2px solid #00a9e0;
     border-bottom:2px solid #00a9e0;
+  }
+
+  .back-arrow {
+    opacity: 1;
   }
 
 }

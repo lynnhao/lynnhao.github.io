@@ -178,7 +178,7 @@ p#main {
 
 .nav{
 	opacity:0.25;
-	transition: all 1s ease;
+	transition: all 0.7s ease;
   margin-bottom: -0.4rem;
     /*width: auto;
     height: auto;*/
@@ -192,7 +192,7 @@ p#main {
    
 }
 .nav:first-child {
-  margin-bottom: -0.7rem;
+  margin-bottom: -0.3rem;
 }
 .nav:last-child {
 	margin-bottom:0rem;
@@ -200,7 +200,7 @@ p#main {
 .nav:hover{
   color: white;
 	opacity:1;
-	transition: all 1s ease;
+	transition: all 0.7s ease;
 }
 .navtext{
 	color: white;
