@@ -316,6 +316,10 @@ a.nav-active {
 .about-me-img {
     padding-top: 2rem;
 }
+.contact-img {
+  padding-top: 2rem;
+  width: 36rem;
+}
 .about-heading {
     color:white;
     font-size: 1.5rem;
@@ -843,6 +847,39 @@ li{
     opacity: 0.4;
     transition: all 1s ease;
 
+}
+
+/** CONTACT PAGE **/
+.contact-wrap {
+  padding-left: 5rem;
+  padding-bottom: 0.7rem;
+}
+.contact-icon i {
+  float: left;
+  display:inline-block;
+  vertical-align:top;
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0.5;
+}
+.contact-text a {
+  font-family: Avenir Next;
+  color: white;
+  transition: 0.5s ease all;
+}
+.contact-text a:hover {
+  font-family: Avenir Next;
+  color: white;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+}
+.contact-text {
+  display:inline-block; 
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-family: Avenir Next;
+  color: white;
 }
 
 /** FOOTER **/
